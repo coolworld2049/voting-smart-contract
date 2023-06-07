@@ -1,0 +1,91 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\coolw\\WebstormProjects\\voting-smart-contract\\contracts\\MainContract.sol": {
+      "lastModificationDate": 1686135584655,
+      "contentHash": "f2e5c5fc5d2fbc68db70dfdd059c4e3d",
+      "sourceName": "contracts/MainContract.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Voting.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "MainContract"
+      ]
+    },
+    "C:\\Users\\coolw\\WebstormProjects\\voting-smart-contract\\contracts\\Voting.sol": {
+      "lastModificationDate": 1686133768530,
+      "contentHash": "97a4d67e5e0bcad0d5e07fdc598e2557",
+      "sourceName": "contracts/Voting.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "Voting"
+      ]
+    }
+  }
+}

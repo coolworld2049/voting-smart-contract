@@ -2,22 +2,22 @@
 
 pragma solidity ^0.8.19;
 
-import "./Election.sol";
+import "./Voting.sol";
 
 contract MainContract {
-    uint public electionId = 0;
-    mapping(uint => address) public Elections;
+    uint public votingId = 0;
+    mapping(uint => address) public Votings;
     
-    event ElectionCreated(uint id);
+    event VotingCreated(uint id);
     
-    function createElection(
-        string[] memory _nda,
-        string[] memory _candidates
+    function createVoting(
+        string[] memory _name, // e.g ["student group leader voting", "so it`s necessary"]
+        string[][] memory _candidates // e.g [["boba", "choose me"],]
     ) public returns (uint id) {
-        Election election = new Election(_nda, _candidates);
-        Elections[electionId] = address(election);
-        id = electionId++;
-        emit ElectionCreated(id);
+        Voting voting = new Voting(_name, _candidates);
+        Votings[votingId] = address(voting);
+        id = votingId++;
+        emit VotingCreated(id);
         return id;
     }
 }

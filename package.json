@@ -18,9 +18,10 @@
     "typechain": "^8.1.1"
   },
   "scripts": {
-    "deploy": "npx hardhat deploy && npx hardhat run scripts/deployElectionContract.js"
+    "deploy": "npx hardhat deploy --reset && npx hardhat run scripts/deployElectionContract.js"
   },
   "dependencies": {
+    "dotenv": "^16.1.4",
     "hardhat-deploy": "^0.11.26"
   }
 }

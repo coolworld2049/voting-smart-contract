@@ -1,5 +1,3 @@
-const { verify } = require("../hardhat.config");
-
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy } = deployments;
     const { deployer } = await getNamedAccounts();
